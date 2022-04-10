@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diamondback Chess</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <style>
-        div {
-            border-style: solid;
-            border-color: black;
-            padding: 5px;
-            margin: 5px;
-        }
-    </style>
 </head>
 <body>
 <!-- One Navbar For both pages!-->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#"><img src="DB_Logo.png" width="50" height="50" class="d-inline-block align-bottom">Diamondback Chess</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img src="DB_Logo.png" width="50" height="50" class="d-inline-block align-bottom">Diamondback Chess</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
@@ -32,12 +24,85 @@
           <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pairing Apps</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
             <a class="dropdown-item" href="roundrobin.html">Round Robin Tournament Pairing</a>
-            <a class="dropdown-item" href="#">Swiss Tournament Pairing</a>
+            <a class="dropdown-item disabled" href="#">Swiss Tournament Pairing</a>
           </div>
         </li>
       </ul>
     </div>
-  </nav> 
+    </nav> 
+    <br><br><br>
+    
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3"><strong>Diamondback Chess Club</strong></h1>
+          <p>The only weekly USCF rated chess play in New Mexico.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3 card-body alert-primary">
+            <h2>April 11</h2>
+            <p>6 Player Round Robin</p>
+            <p>Time:G/15;d5</p>
+            <p>Prizes:1st $20, 2nd $10</p>
+          </div>
+          <div class="col-md-3 card-body alert-secondary">
+            <h2>April 18</h2>
+            <p>8 Player Round Robin</p>
+            <p>Time:G/10;d5</p>
+            <p>Prizes:1st $25, 2nd $15</p>   
+          </div>
+          <div class="col-md-3 card-body alert-primary">
+            <h2>April 25</h2>
+            <p>10 Player Round Robin</p>
+            <p>Time:G/5;+2</p>
+            <p>Prizes:1st $25, 2nd $15, 3rd $5</p>
+          </div>
+    </div>
+
+    <div class="container">
+        <h3>Contact Us for More Information</h3>
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" value="John" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="LeTard" required>
+                </div> 
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="USCFcheck">
+                    <label class="custom-control-label" for="USCFcheck">USCF Member</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-8">
+                    <div class="form-group">
+                        <label for="Question">Questions</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label>Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email" value="name@chess.com" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Nubmer" value="(505)555-1212" required>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+
+
+
+
 
     
     <script src="node_modules/jquery/dist/jquery.js"></script>
